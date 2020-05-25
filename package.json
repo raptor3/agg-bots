@@ -1,0 +1,24 @@
+{
+  "name": "agg-bots",
+  "version": "1.0.0",
+  "description": "Bunch of bots",
+  "main": "./dist/index.js",
+  "scripts": {
+    "start": "node ./dist/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "localStart": "npm run build && npm run start"
+  },
+  "author": "Boba Fett",
+  "license": "ISC",
+  "dependencies": {
+    "node-fetch": "^2.2.0",
+    "telegraf": "^3.35.0"
+  },
+  "devDependencies": {
+    "@types/node": "^10.17.13",
+    "@types/node-fetch": "^2.5.4",
+    "typescript": "^3.7.5"
+  },
+  "heroku-run-build-script": true
+}
