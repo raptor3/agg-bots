@@ -6,4 +6,4 @@ addons:
     organization: "raptor3-agg-bots" # the key of the org you chose at step #3
 script:
   # other script steps might be done before running the actual analysis
-  - sonar-scanner -Dsonar.projectVersion 1.0.0.$TRAVIS_BUILD_NUMBER
+  - sonar-scanner -Dsonar.projectVersion=1.0.0.$TRAVIS_BUILD_NUMBER
