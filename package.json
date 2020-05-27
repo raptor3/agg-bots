@@ -5,9 +5,10 @@
   "main": "./dist/index.js",
   "scripts": {
     "start": "node ./dist/index.js",
-    "test": "echo \"Error: no test specified\"",
     "build": "tsc",
-    "localStart": "npm run build && npm run start"
+    "localStart": "npm run build && npm run start",
+    "test": "ts-node node_modules/jasmine/bin/jasmine --config=jasmine.json",
+    "coverage": "nyc -r text --reporter=lcov -e .ts -x \"tests/*.test.ts\" npm run test"
   },
   "author": "Boba Fett",
   "license": "ISC",
@@ -16,8 +17,12 @@
     "telegraf": "^3.35.0"
   },
   "devDependencies": {
+    "@types/jasmine": "^3.5.10",
     "@types/node": "^10.17.13",
     "@types/node-fetch": "^2.5.4",
+    "jasmine": "^3.5.0",
+    "nyc": "^15.0.1",
+    "ts-node": "^8.10.1",
     "typescript": "^3.7.5"
   },
   "heroku-run-build-script": true
