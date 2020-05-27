@@ -35,3 +35,7 @@ export function keys(obj: any): string[] {
 export function unique<T>(objects: T[]) {
 	return [...new Set(objects)];
 }
+
+export function testCoverage() {
+	return true;
+}
