@@ -28,11 +28,4 @@ describe('shared', function () {
 			expect(result).toBe(true);
 		});
 	});
-
-	describe('newFunction3', function () {
-		it('should be true', function () {
-			const result = newFunction3();
-			expect(result).toBe(true);
-		});
-	});
 });
