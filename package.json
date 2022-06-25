@@ -13,7 +13,7 @@
   "author": "Boba Fett",
   "license": "ISC",
   "dependencies": {
-    "node-fetch": "^2.2.0",
+    "node-fetch": "^2.6.7",
     "telegraf": "^3.35.0"
   },
   "devDependencies": {
